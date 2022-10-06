@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa de programadores</title>
+    <link rel="stylesheet" type="text/css" href="./Survey Form.css">
+  </head>
+  <body>
+    <div id="heading">
+      <h1 id=title>Portal dos programadores!</h1>
+      <h1 id="title">Conte-nos sobre você!</h1>
+      <p id="description">Adoramos saber sobre quais tecnologias e ferramentas
+        Desenvolvedores estão usando em todo o mundo! E preenchendo o formulário
+        voçê será receberá em seu email vários cursos e material, juntamente com
+        ofertas de trabalho!</p>
+    </div>
+    <div id="main">
+      <form id="survey-form">
+        <div id="input-fields">                          
+          <label id="name-label"><b>Nome:</b></label>
+          <input id="name" type="name" name="name" class="form" required
+            placeholder="Nome Completo"><br>
+          <br>
+          <label id="email-label"><b>Seu Email Principal:</b></label>
+          <input id="email" type="email" name="email" class="form" required
+            placeholder="exemplo@mail.com"><br>
+          <br>
+          <label id="number-label"><b>Sua Idade:</b></label>
+          <input id="number" type="number" name="number" class="form" min="5"
+            max="99" placeholder="18+">
+        </div>
+        <div id="dropdown-div"><br>
+          <label id="dropdown-label"><strong>Linguagem de programação que você
+              tem experiência: </strong></label><br>
+          <select id="dropdown" name="code-lang" class="form">
+            <option value="C">C (Linguagem de Programação)</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="php">PHP</option>
+            <option value="Js">Java Script</option>
+            <option value="Go">Go (Linguagem de Programação)</option>
+            <option value="ruby">Ruby on rails</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+          </select>
+        </div>
+        <div id="dropdown-div"><br>
+          <label id="dropdown-label"><strong>FrameWorks usado por você:
+            </strong></label><br>
+          <select id="dropdown" name="code-lang" class="form">
+            <option value="C">React</option>
+            <option value="Python">Angular.js</option>
+            <option value="C#">Vue.js</option>
+            <option value="php">jQuery</option>
+            <option value="Js">Boostrap</option>
+          </select>
+        </div>
+        <div id="button-area">
+          <br>
+          <label id="job-label"><b>Situação de emprego desejada:</b></label><br>
+          <input type="radio" class="radio-inline" name="gender"
+            value="employed" checked> Trabalho em tempo integral.(CLT)<br>
+          <input type="radio" class="radio-inline" name="gender"
+            value="freelancer"> Trabalho de tempo integral.(Freelancer)<br>
+          <input type="radio" class="radio-inline" name="gender"
+            value="applier"> Trabalho de tempo parcial.(Freelancer)<br>
+          <input type="radio" class="radio-inline" name="gender"
+            value="unemployed"> Eu sou estudante.(Estágio)
+        </div>
+        <div id="button-area">
+          <label id="os-label">Sistema Operacional usado por você: </label><br>
+          <input type="checkbox" name="os1" value="windows" checked> Eu tenho
+          experiência em Windows-OS<br>
+          <input type="checkbox" name="os2" value="linux"> Eu tenho experiência
+          em
+          Linux-OS<br>
+          <input type="checkbox" name="0s3" value="mac"> Eu tenho experiência em
+          Mac-OS
+        </div>
+
+        <div id="dropdown">
+          <label id="dropdown-label"><strong>Linguagem de Programação que voçê
+              deseja aprender: </strong></label>
+          <select id="dropdown" name="code-lang" class="form"><br>
+            <option value="C">C (Linguagem de Programação)</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="php">PHP</option>
+            <option value="Js">Java Script</option>
+            <option value="Go">Go (Linguagem de Programação)</option>
+            <option value="ruby">Ruby on rails</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+          </select>
+        </div>
+        <div id="button-area">
+          <label id="os-label"><b>Versionadores de Código que você tem
+              experiencia:</b><br></label>
+          <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+          <input type="checkbox" name="tech2" value="nodejs"> Node.js<br>
+          <input type="checkbox" name="tech3" value="tnflow"> Tensorflow<br>
+          <input type="checkbox" name="tech3" value="git"> Github<br>
+          <input type="checkbox" name="tech3" value="devops"> Dev-Ops<br>
+        </div>
+
+        <div id="ending">
+          <input id="submit" type="submit" class="form">
+        </div>
+      </form>
+    </div>
+
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
